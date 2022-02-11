@@ -610,7 +610,31 @@ body {
           box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 3px;
-  padding: 6rem;
+  padding: 6rem 9rem;
+  font-size: 1.6rem;
+  -webkit-transform: skewX(-15deg);
+          transform: skewX(-15deg);
+}
+
+.story__shape {
+  height: 15rem;
+  width: 15rem;
+  background-color: aqua;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  -webkit-transform: translateX(-3rem) skewX(15deg);
+          transform: translateX(-3rem) skewX(15deg);
+}
+
+.story__image {
+  height: 100%;
+}
+
+.story__text {
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
 }
 
 .section-about {
